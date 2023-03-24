@@ -1,4 +1,4 @@
-// Initialize variables for movement
+depth = -y;
 var moveX = 0;
 var moveY = 0;
 
