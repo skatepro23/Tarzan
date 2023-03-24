@@ -35,6 +35,7 @@ if (keyboard_check(vk_shift)) {
 }
 if (crouching) {
     sprite_index = sPlayerCrouch;
+	moveSpeed = moveSpeed/2;
 } else {
     sprite_index = sPlayerRight; // Replace spr_Player with your standing or walking sprite
 }
