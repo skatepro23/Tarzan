@@ -1,4 +1,22 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"sPlayerBack","order":14,"path":"sprites/sPlayerBack/sPlayerBack.yy",},
+    {"name":"sGrass","order":15,"path":"sprites/sGrass/sGrass.yy",},
+    {"name":"sBush","order":13,"path":"sprites/sBush/sBush.yy",},
+    {"name":"Sprite18","order":2,"path":"sprites/Sprite18/Sprite18.yy",},
+    {"name":"sBushLush","order":12,"path":"sprites/sBushLush/sBushLush.yy",},
+    {"name":"sGrass2","order":11,"path":"sprites/sGrass2/sGrass2.yy",},
+    {"name":"sPlayerRight","order":9,"path":"sprites/sPlayerRight/sPlayerRight.yy",},
+    {"name":"sPlayer1","order":7,"path":"sprites/sPlayer1/sPlayer1.yy",},
+    {"name":"sPlayerCrouchBack","order":6,"path":"sprites/sPlayerCrouchBack/sPlayerCrouchBack.yy",},
+    {"name":"sBushSmall","order":8,"path":"sprites/sBushSmall/sBushSmall.yy",},
+    {"name":"sPlayer2","order":5,"path":"sprites/sPlayer2/sPlayer2.yy",},
+    {"name":"sPlayerCrouch","order":4,"path":"sprites/sPlayerCrouch/sPlayerCrouch.yy",},
+    {"name":"sPlayerLeft","order":3,"path":"sprites/sPlayerLeft/sPlayerLeft.yy",},
+    {"name":"Subjekt","order":16,"path":"objects/Subjekt/Subjekt.yy",},
+    {"name":"sGrass3","order":2,"path":"sprites/sGrass3/sGrass3.yy",},
+    {"name":"sForegroundRight","order":1,"path":"sprites/sForegroundRight/sForegroundRight.yy",},
+    {"name":"Sprite11","order":10,"path":"sprites/Sprite11/Sprite11.yy",},
+  ],
 }
