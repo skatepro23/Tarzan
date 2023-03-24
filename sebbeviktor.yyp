@@ -34,7 +34,6 @@
     "IDEVersion": "2023.2.1.75",
   },
   "resources": [
-    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
     {"id":{"name":"oForegroundRight","path":"objects/oForegroundRight/oForegroundRight.yy",},},
     {"id":{"name":"sPlayerBack","path":"sprites/sPlayerBack/sPlayerBack.yy",},},
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},},
@@ -45,7 +44,7 @@
     {"id":{"name":"sBushLush","path":"sprites/sBushLush/sBushLush.yy",},},
     {"id":{"name":"sGrass2","path":"sprites/sGrass2/sGrass2.yy",},},
     {"id":{"name":"oForegroundLeft","path":"objects/oForegroundLeft/oForegroundLeft.yy",},},
-    {"id":{"name":"Script2","path":"scripts/Script2/Script2.yy",},},
+    {"id":{"name":"Hejviktorfunkardet","path":"scripts/Hejviktorfunkardet/Hejviktorfunkardet.yy",},},
     {"id":{"name":"oBush1","path":"objects/oBush1/oBush1.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"sPlayerRight","path":"sprites/sPlayerRight/sPlayerRight.yy",},},
