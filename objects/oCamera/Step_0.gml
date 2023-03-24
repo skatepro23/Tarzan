@@ -6,7 +6,4 @@ var view_h_half = view_h * 0.5;
 var target_x = target.x - view_w_half;
 var target_y = target.y - view_h_half;
 
-if (target_x > 1)  (target_y > 1)
-{
-	move_towards_point(target_x, target_y,5);
-}
+camera_set_view_pos(camera, target_x, target_y);

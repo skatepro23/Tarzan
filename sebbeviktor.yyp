@@ -44,11 +44,7 @@
     {"id":{"name":"sBushLush","path":"sprites/sBushLush/sBushLush.yy",},},
     {"id":{"name":"sGrass2","path":"sprites/sGrass2/sGrass2.yy",},},
     {"id":{"name":"oForegroundLeft","path":"objects/oForegroundLeft/oForegroundLeft.yy",},},
-<<<<<<< Updated upstream
     {"id":{"name":"oTree","path":"objects/oTree/oTree.yy",},},
-=======
-    {"id":{"name":"Object9","path":"objects/Object9/Object9.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"oBush1","path":"objects/oBush1/oBush1.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"sPlayerRight","path":"sprites/sPlayerRight/sPlayerRight.yy",},},
