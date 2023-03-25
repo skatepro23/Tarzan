@@ -53,6 +53,7 @@
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"oDraw_Info","path":"objects/oDraw_Info/oDraw_Info.yy",},},
     {"id":{"name":"oBush2","path":"objects/oBush2/oBush2.yy",},},
+    {"id":{"name":"sGrassSmall","path":"sprites/sGrassSmall/sGrassSmall.yy",},},
     {"id":{"name":"sPlayerRight","path":"sprites/sPlayerRight/sPlayerRight.yy",},},
     {"id":{"name":"sPlayer1","path":"sprites/sPlayer1/sPlayer1.yy",},},
     {"id":{"name":"sPlayerCrouchBack","path":"sprites/sPlayerCrouchBack/sPlayerCrouchBack.yy",},},
