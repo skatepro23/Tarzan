@@ -6,4 +6,9 @@ var view_h_half = view_h * 0.5;
 var target_x = target.x - view_w_half;
 var target_y = target.y - view_h_half;
 
+distance_x = abs(target_x - camera_get_view_x(camera))
+distance_y = abs(target_y - camera_get_view_y(camera))
+
+if distance_x > 1 
+
 camera_set_view_pos(camera, target_x, target_y);
