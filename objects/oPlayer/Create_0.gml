@@ -1,2 +1,3 @@
-
+equipped = false;
 crouching = false
+
