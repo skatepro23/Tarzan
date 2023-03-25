@@ -13,6 +13,7 @@
     {"name":"oTree","order":9,"path":"objects/oTree/oTree.yy",},
     {"name":"oBush1","order":8,"path":"objects/oBush1/oBush1.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
+    {"name":"oDraw_Info","order":10,"path":"objects/oDraw_Info/oDraw_Info.yy",},
     {"name":"sPlayerRight","order":9,"path":"sprites/sPlayerRight/sPlayerRight.yy",},
     {"name":"sPlayer1","order":8,"path":"sprites/sPlayer1/sPlayer1.yy",},
     {"name":"sPlayerCrouchBack","order":7,"path":"sprites/sPlayerCrouchBack/sPlayerCrouchBack.yy",},
