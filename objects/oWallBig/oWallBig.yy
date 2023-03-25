@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWall",
+  "name": "oWallBig",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sGrass4",
-    "path": "sprites/sGrass4/sGrass4.yy",
+    "name": "sGrass2",
+    "path": "sprites/sGrass2/sGrass2.yy",
   },
   "spriteMaskId": null,
   "visible": true,
