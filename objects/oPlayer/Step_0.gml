@@ -22,11 +22,11 @@ if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
 if (!place_meeting(x + moveX, y, oWallParent)) {
     x += moveX;
 }
-
-// Check for vertical collisions with oWall
-if (!place_meeting(x, y + moveY, oWallParent)) {
+// Check for horizontal collisions with oWall
+if (!place_meeting(y + moveY, x, oWallParent)) {
     y += moveY;
 }
+
 // Check if the "Shift" key is pressed
 if (keyboard_check(vk_shift)) {
     crouching = true;
