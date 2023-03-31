@@ -1,14 +1,10 @@
-view_wport[0] = 1080
-view_hport[0] = 720
+// oCamera Create Event
 
+// Set the target to follow (oPlayer)
 target = oPlayer;
 
-targetPos_x = target.x;
-targetPos_y = target.y;
+// Set the camera's lerp speed (0.1 is a good starting value)
+lerp_speed = 0.2;
 
-view_w = 640;
-view_h = 360;
-
-camera = view_camera[0]
-
-camera_set_view_size(camera,view_w,view_h)
+// Create the view and assign it to the camera
+view = view_camera[0];
