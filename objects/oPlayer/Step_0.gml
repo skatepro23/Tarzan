@@ -9,29 +9,26 @@ moveSpeed = moveSpeed_init
 // Check if the "Shift" key is pressed
 if (keyboard_check(vk_shift)){
     crouching = true;
+	moveSpeed = moveSpeed_init/2
 } else {
     crouching = false;
-}
-if (crouching) {
-    sprite_index = sPlayerCrouch;
-	moveSpeed = moveSpeed_init/2
-	show_debug_message("crouching")
-} else {
-    sprite_index = sPlayerRight; // Replace spr_Player with your standing or walking sprite
-	show_debug_message("not crouching")
 }
 
 // Check for WASD key presses and update the moveX and moveY variables accordingly
 if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
     moveY = -moveSpeed;
+	moveDirection = "up"
 } else if (keyboard_check(ord("S")) || keyboard_check(vk_down)) {
     moveY = moveSpeed;
+	moveDirection = "down";
 }
 
 if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
     moveX = -moveSpeed;
+	moveDirection = "left";
 } else if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
     moveX = moveSpeed;
+	moveDirection = "right";
 }
 
 // Check for horizontal collisions with oWall
@@ -44,12 +41,48 @@ if (!place_meeting(y + moveY, x, oWallParent)) {
 }
 
 if (mouse_check_button(mb_left)){
-	equipped = true;
+	torch_equipped = true;
 } else {
-	equipped = false;
+	torch_equipped = false;
 }
-if (equipped) {
-	sprite_index = sPlayerFlame;
-} else {
-	sprite_index = sprite_index
+
+//sprite system
+if (moveDirection == "up") {
+	if (crouching == false) {
+		sprite_index = sPlayerBack
+	}
+	else {
+		sprite_index = sPlayerCrouchBack
+	}
+}
+
+if (moveDirection == "down") {
+	if (crouching == false) {
+		sprite_index = sPlayerRight
+	}
+	else {
+		sprite_index = sPlayerCrouch
+	}
+}
+
+if (moveDirection == "left") {
+	if (crouching == false) {
+		sprite_index = sPlayerLeft
+	}
+	else {
+		sprite_index = sPlayerCrouch
+	}
+}
+
+if (moveDirection == "right") {
+	if (crouching == false) {
+		sprite_index = sPlayerRight
+	}
+	else {
+		sprite_index = sPlayerCrouch
+	}
+}
+
+if (torch_equipped == true) {
+	sprite_index = sPlayerFlame
 }
