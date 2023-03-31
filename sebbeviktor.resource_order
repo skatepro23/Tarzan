@@ -16,6 +16,7 @@
     {"name":"oBushSmall2","order":11,"path":"objects/oBushSmall2/oBushSmall2.yy",},
     {"name":"oTree","order":9,"path":"objects/oTree/oTree.yy",},
     {"name":"oBush1","order":8,"path":"objects/oBush1/oBush1.yy",},
+    {"name":"oCamera","order":15,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oWall","order":1,"path":"objects/oWall/oWall.yy",},
     {"name":"oDraw_Info","order":10,"path":"objects/oDraw_Info/oDraw_Info.yy",},
     {"name":"oBush2","order":12,"path":"objects/oBush2/oBush2.yy",},
@@ -25,6 +26,7 @@
     {"name":"sPlayerCrouchBack","order":7,"path":"sprites/sPlayerCrouchBack/sPlayerCrouchBack.yy",},
     {"name":"sBushSmall2","order":17,"path":"sprites/sBushSmall2/sBushSmall2.yy",},
     {"name":"sBushSmall","order":6,"path":"sprites/sBushSmall/sBushSmall.yy",},
+    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"sPlayer2","order":5,"path":"sprites/sPlayer2/sPlayer2.yy",},
     {"name":"sPlayerFlame","order":23,"path":"sprites/sPlayerFlame/sPlayerFlame.yy",},
     {"name":"sPlayerCrouch","order":4,"path":"sprites/sPlayerCrouch/sPlayerCrouch.yy",},
@@ -35,6 +37,5 @@
     {"name":"sGrass4","order":19,"path":"sprites/sGrass4/sGrass4.yy",},
     {"name":"sForegroundLeft","order":1,"path":"sprites/sForegroundLeft/sForegroundLeft.yy",},
     {"name":"Sprite11","order":15,"path":"sprites/Sprite11/Sprite11.yy",},
-    {"name":"oCamera","order":6,"path":"objects/oCamera/oCamera.yy",},
   ],
 }

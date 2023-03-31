@@ -1,11 +1,14 @@
-// Set the target to follow
+view_wport[0] = 1080
+view_hport[0] = 720
+
 target = oPlayer;
 
-// Set the view width and height
-view_w = 360;
-view_h = 180;
+targetPos_x = target.x;
+targetPos_y = target.y;
 
-camera = view_camera[0];
+view_w = 640;
+view_h = 360;
 
-// Set the camera view size
-camera_set_view_size(camera, view_w, view_h);
+camera = view_camera[0]
+
+camera_set_view_size(camera,view_w,view_h)
