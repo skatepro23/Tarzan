@@ -33,6 +33,7 @@
     {"name":"sPlayer2","order":5,"path":"sprites/sPlayer2/sPlayer2.yy",},
     {"name":"sPlayerFlame","order":23,"path":"sprites/sPlayerFlame/sPlayerFlame.yy",},
     {"name":"sPlayerCrouch","order":4,"path":"sprites/sPlayerCrouch/sPlayerCrouch.yy",},
+    {"name":"gameMaster","order":17,"path":"objects/gameMaster/gameMaster.yy",},
     {"name":"sPlayerLeft","order":3,"path":"sprites/sPlayerLeft/sPlayerLeft.yy",},
     {"name":"oBushSmall","order":7,"path":"objects/oBushSmall/oBushSmall.yy",},
     {"name":"Sprite24","order":1,"path":"sprites/Sprite24/Sprite24.yy",},
