@@ -1,18 +1,11 @@
 depth = -y;
 
 // Set the movement speed
+moveDirection = "idle"
 moveSpeed = moveSpeed_init
 speedScale = 0
 add2Pos_x = 0
 add2Pos_y = 0
-
-// Check if the "Shift" key is pressed
-if (keyboard_check(vk_shift)){
-    crouching = true;
-	moveSpeed = moveSpeed_init/2
-} else {
-    crouching = false;
-}
 
 // Check for WASD key presses and update the moveX and moveY variables accordingly
 if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
@@ -38,6 +31,14 @@ else {
 	speedScale = 1/sqrt(sqr(add2Pos_x)+sqr(add2Pos_y)) //om spelaren rör sig diagonalt är speedScale = 1/sqrt(2) vilket gör att spelaren går lika snabbt diagonalt
 }
 
+// Check if the "Shift" key is pressed
+if (keyboard_check(vk_shift)){
+    crouching = true;
+	moveSpeed = moveSpeed_init/2
+} else {
+    crouching = false;
+}
+
 moveX = add2Pos_x*moveSpeed*speedScale
 moveY = add2Pos_y*moveSpeed*speedScale
 
@@ -57,6 +58,7 @@ if (mouse_check_button(mb_left)){
 
 //sprite system
 if (moveDirection == "up") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerBack
 	}
@@ -66,6 +68,7 @@ if (moveDirection == "up") {
 }
 
 if (moveDirection == "down") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerRight
 	}
@@ -75,6 +78,7 @@ if (moveDirection == "down") {
 }
 
 if (moveDirection == "left") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerLeft
 	}
@@ -84,12 +88,17 @@ if (moveDirection == "left") {
 }
 
 if (moveDirection == "right") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerRight
 	}
 	else {
 		sprite_index = sPlayerCrouch
 	}
+}
+if (moveDirection == "idle" && image_index >= 4) {
+	image_index = 0
+	image_speed = 0
 }
 
 if (torch_equipped == true) {
