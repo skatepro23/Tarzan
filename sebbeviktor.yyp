@@ -71,6 +71,7 @@
     {"id":{"name":"sPlayerLeft","path":"sprites/sPlayerLeft/sPlayerLeft.yy",},},
     {"id":{"name":"oBushSmall","path":"objects/oBushSmall/oBushSmall.yy",},},
     {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},},
+    {"id":{"name":"oBirdSpawner","path":"objects/oBirdSpawner/oBirdSpawner.yy",},},
     {"id":{"name":"sTree","path":"sprites/sTree/sTree.yy",},},
     {"id":{"name":"sGrass3","path":"sprites/sGrass3/sGrass3.yy",},},
     {"id":{"name":"sGrass4","path":"sprites/sGrass4/sGrass4.yy",},},

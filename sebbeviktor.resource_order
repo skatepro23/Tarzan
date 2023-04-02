@@ -37,6 +37,7 @@
     {"name":"sPlayerLeft","order":3,"path":"sprites/sPlayerLeft/sPlayerLeft.yy",},
     {"name":"oBushSmall","order":7,"path":"objects/oBushSmall/oBushSmall.yy",},
     {"name":"Sprite24","order":1,"path":"sprites/Sprite24/Sprite24.yy",},
+    {"name":"oBirdSpawner","order":18,"path":"objects/oBirdSpawner/oBirdSpawner.yy",},
     {"name":"sTree","order":16,"path":"sprites/sTree/sTree.yy",},
     {"name":"sGrass3","order":2,"path":"sprites/sGrass3/sGrass3.yy",},
     {"name":"sGrass4","order":19,"path":"sprites/sGrass4/sGrass4.yy",},
