@@ -1,10 +1,10 @@
 depth = -y;
 
-moveX = 0;
-moveY = 0;
-
 // Set the movement speed
 moveSpeed = moveSpeed_init
+speedScale = 0
+add2Pos_x = 0
+add2Pos_y = 0
 
 // Check if the "Shift" key is pressed
 if (keyboard_check(vk_shift)){
@@ -16,20 +16,30 @@ if (keyboard_check(vk_shift)){
 
 // Check for WASD key presses and update the moveX and moveY variables accordingly
 if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
-    moveY = -moveSpeed;
+	add2Pos_y = -1
 	moveDirection = "up"
 } else if (keyboard_check(ord("S")) || keyboard_check(vk_down)) {
-    moveY = moveSpeed;
+	add2Pos_y = 1
 	moveDirection = "down";
 }
 
 if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
-    moveX = -moveSpeed;
+	add2Pos_x = -1
 	moveDirection = "left";
 } else if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
-    moveX = moveSpeed;
+	add2Pos_x = 1
 	moveDirection = "right";
 }
+
+if (add2Pos_x == 0 && add2Pos_y == 0) {
+	speedScale = 0
+}
+else {
+	speedScale = 1/sqrt(sqr(add2Pos_x)+sqr(add2Pos_y)) //om spelaren rör sig diagonalt är speedScale = 1/sqrt(2) vilket gör att spelaren går lika snabbt diagonalt
+}
+
+moveX = add2Pos_x*moveSpeed*speedScale
+moveY = add2Pos_y*moveSpeed*speedScale
 
 // Check for horizontal collisions with oWall
 if (!place_meeting(x + moveX, y, oWallParent)) {
@@ -38,7 +48,6 @@ if (!place_meeting(x + moveX, y, oWallParent)) {
 if (!place_meeting(x, y + moveY, oWallParent)) {
     y += moveY;
 }
-
 
 if (mouse_check_button(mb_left)){
 	torch_equipped = true;
