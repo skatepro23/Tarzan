@@ -23,6 +23,7 @@
     {"name":"sGrass","order":14,"path":"sprites/sGrass/sGrass.yy",},
     {"name":"sRailBendDownRight","order":29,"path":"sprites/sRailBendDownRight/sRailBendDownRight.yy",},
     {"name":"oWallParent","order":15,"path":"objects/oWallParent/oWallParent.yy",},
+    {"name":"oBlockage","order":26,"path":"objects/oBlockage/oBlockage.yy",},
     {"name":"oCart","order":24,"path":"objects/oCart/oCart.yy",},
     {"name":"sRailBendUpLeft","order":27,"path":"sprites/sRailBendUpLeft/sRailBendUpLeft.yy",},
     {"name":"oBushLush","order":5,"path":"objects/oBushLush/oBushLush.yy",},
@@ -72,6 +73,7 @@
     {"name":"sGrass4","order":20,"path":"sprites/sGrass4/sGrass4.yy",},
     {"name":"sForegroundLeft","order":2,"path":"sprites/sForegroundLeft/sForegroundLeft.yy",},
     {"name":"sRailUp","order":24,"path":"sprites/sRailUp/sRailUp.yy",},
+    {"name":"sBlockage","order":33,"path":"sprites/sBlockage/sBlockage.yy",},
     {"name":"Sprite11","order":16,"path":"sprites/Sprite11/Sprite11.yy",},
   ],
 }

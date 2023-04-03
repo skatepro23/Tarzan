@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oWallBigOpen",
+  "name": "oBlockage",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sGrassBigOpen",
-    "path": "sprites/sGrassBigOpen/sGrassBigOpen.yy",
+    "name": "sBlockage",
+    "path": "sprites/sBlockage/sBlockage.yy",
   },
   "spriteMaskId": null,
   "visible": true,
