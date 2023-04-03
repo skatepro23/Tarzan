@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oBendUpRight",
+  "name": "oRailBendUpRight",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -9,7 +9,10 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oRailParent",
+    "path": "objects/oRailParent/oRailParent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sRailBend",
-    "path": "sprites/sRailBend/sRailBend.yy",
+    "name": "sRailBendUpRight",
+    "path": "sprites/sRailBendUpRight/sRailBendUpRight.yy",
   },
   "spriteMaskId": null,
   "visible": true,

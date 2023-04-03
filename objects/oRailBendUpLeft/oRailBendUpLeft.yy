@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oRailVert",
+  "name": "oRailBendUpLeft",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sRailUp",
-    "path": "sprites/sRailUp/sRailUp.yy",
+    "name": "sRailBendUpLeft",
+    "path": "sprites/sRailBendUpLeft/sRailBendUpLeft.yy",
   },
   "spriteMaskId": null,
   "visible": true,

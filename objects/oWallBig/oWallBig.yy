@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sGrass2",
-    "path": "sprites/sGrass2/sGrass2.yy",
+    "name": "sGrassBig",
+    "path": "sprites/sGrassBig/sGrassBig.yy",
   },
   "spriteMaskId": null,
   "visible": true,
