@@ -55,6 +55,7 @@
     {"name":"sBushSmall2","order":18,"path":"sprites/sBushSmall2/sBushSmall2.yy",},
     {"name":"sRailLeft","order":25,"path":"sprites/sRailLeft/sRailLeft.yy",},
     {"name":"sBushSmall","order":7,"path":"sprites/sBushSmall/sBushSmall.yy",},
+    {"name":"sGrassBackground","order":32,"path":"sprites/sGrassBackground/sGrassBackground.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"sPlayer2","order":6,"path":"sprites/sPlayer2/sPlayer2.yy",},
     {"name":"sPlayerFlame","order":23,"path":"sprites/sPlayerFlame/sPlayerFlame.yy",},

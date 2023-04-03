@@ -75,6 +75,7 @@
     {"id":{"name":"sBushSmall2","path":"sprites/sBushSmall2/sBushSmall2.yy",},},
     {"id":{"name":"sRailLeft","path":"sprites/sRailLeft/sRailLeft.yy",},},
     {"id":{"name":"sBushSmall","path":"sprites/sBushSmall/sBushSmall.yy",},},
+    {"id":{"name":"sGrassBackground","path":"sprites/sGrassBackground/sGrassBackground.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"sPlayer2","path":"sprites/sPlayer2/sPlayer2.yy",},},
     {"id":{"name":"sPlayerFlame","path":"sprites/sPlayerFlame/sPlayerFlame.yy",},},
