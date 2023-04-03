@@ -1,10 +1,35 @@
 depth = -y;
 
-moveX = 0;
-moveY = 0;
-
 // Set the movement speed
+moveDirection = "idle"
 moveSpeed = moveSpeed_init
+speedScale = 0
+add2Pos_x = 0
+add2Pos_y = 0
+
+// Check for WASD key presses and update the moveX and moveY variables accordingly
+if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
+	add2Pos_y = -1
+	moveDirection = "up"
+} else if (keyboard_check(ord("S")) || keyboard_check(vk_down)) {
+	add2Pos_y = 1
+	moveDirection = "down";
+}
+
+if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
+	add2Pos_x = -1
+	moveDirection = "left";
+} else if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
+	add2Pos_x = 1
+	moveDirection = "right";
+}
+
+if (add2Pos_x == 0 && add2Pos_y == 0) {
+	speedScale = 0
+}
+else {
+	speedScale = 1/sqrt(sqr(add2Pos_x)+sqr(add2Pos_y)) //om spelaren rör sig diagonalt är speedScale = 1/sqrt(2) vilket gör att spelaren går lika snabbt diagonalt
+}
 
 // Check if the "Shift" key is pressed
 if (keyboard_check(vk_shift)){
@@ -14,22 +39,8 @@ if (keyboard_check(vk_shift)){
     crouching = false;
 }
 
-// Check for WASD key presses and update the moveX and moveY variables accordingly
-if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
-    moveY = -moveSpeed;
-	moveDirection = "up"
-} else if (keyboard_check(ord("S")) || keyboard_check(vk_down)) {
-    moveY = moveSpeed;
-	moveDirection = "down";
-}
-
-if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
-    moveX = -moveSpeed;
-	moveDirection = "left";
-} else if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
-    moveX = moveSpeed;
-	moveDirection = "right";
-}
+moveX = add2Pos_x*moveSpeed*speedScale
+moveY = add2Pos_y*moveSpeed*speedScale
 
 // Check for horizontal collisions with oWall
 if (!place_meeting(x + moveX, y, oWallParent)) {
@@ -39,7 +50,6 @@ if (!place_meeting(x, y + moveY, oWallParent)) {
     y += moveY;
 }
 
-
 if (mouse_check_button(mb_left)){
 	torch_equipped = true;
 } else {
@@ -48,6 +58,7 @@ if (mouse_check_button(mb_left)){
 
 //sprite system
 if (moveDirection == "up") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerBack
 	}
@@ -57,6 +68,7 @@ if (moveDirection == "up") {
 }
 
 if (moveDirection == "down") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerRight
 	}
@@ -66,6 +78,7 @@ if (moveDirection == "down") {
 }
 
 if (moveDirection == "left") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerLeft
 	}
@@ -75,12 +88,17 @@ if (moveDirection == "left") {
 }
 
 if (moveDirection == "right") {
+	image_speed = 1
 	if (crouching == false) {
 		sprite_index = sPlayerRight
 	}
 	else {
 		sprite_index = sPlayerCrouch
 	}
+}
+if (moveDirection == "idle" && image_index >= 4) {
+	image_index = 0
+	image_speed = 0
 }
 
 if (torch_equipped == true) {
