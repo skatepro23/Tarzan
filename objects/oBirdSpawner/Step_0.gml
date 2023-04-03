@@ -17,6 +17,7 @@ if (birdCounter < 5) {
 	spawnPoint_y = random_range(yLimit_top,yLimit_bottom)
 	
 	//if (spawnPoint_x < frameBorder_left && spawnPoint_x > frameBorder_right && spawnPoint_y < frameBorder_top && spawnPoint_y > frameBorder_bottom) {
-		instance_create_layer(spawnPoint_x,spawnPoint_y,"Instances",oBird)
+		last_instance = instance_create_layer(spawnPoint_x,spawnPoint_y,"Instances",oBird)
 	//}
+	show_debug_message(string(last_instance))
 }

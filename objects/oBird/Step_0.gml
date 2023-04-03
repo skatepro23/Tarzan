@@ -2,7 +2,7 @@ depth = -y;
 
 distanceToPlayer = sqrt(sqr(oPlayer.x-oBird.x)+sqr(oPlayer.y-oBird.y))
 
-show_debug_message("Distance to player: " + string(distanceToPlayer) + " pixels")
+//show_debug_message("Distance to player: " + string(distanceToPlayer) + " pixels")
 
 if (oPlayer.crouching == true) {
 	attentionDistance = 15

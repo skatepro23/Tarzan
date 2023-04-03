@@ -1,3 +1,5 @@
-target = oPlayer
-targetDetected = false
-birdState = "idle"
+
+
+initialize = false
+
+//last_instance = oBirdSpawner.last_instance
