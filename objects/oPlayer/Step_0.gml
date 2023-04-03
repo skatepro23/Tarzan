@@ -96,7 +96,7 @@ if (moveDirection == "right") {
 		sprite_index = sPlayerCrouch
 	}
 }
-if (moveDirection == "idle" && image_index >= 4) {
+if (moveDirection == "idle" && image_index >= image_number - 2) {
 	image_index = 0
 	image_speed = 0
 }
