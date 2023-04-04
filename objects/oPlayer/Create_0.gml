@@ -5,3 +5,4 @@ attacking = false;
 
 moveSpeed_init = 2;
 moveDirection = "down";
+lastDirection = moveDirection
