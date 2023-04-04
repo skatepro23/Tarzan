@@ -41,6 +41,22 @@ if (keyboard_check(vk_shift)){
     crouching = false;
 }
 
+if (attacking == true) {
+	attackCooldown -= 1
+	show_debug_message("Attacking")
+	
+	if (attackCooldown <= 0) {
+		attacking = false
+		show_debug_message("Stopped attacking")
+	}
+}
+
+if (keyboard_check(vk_space) && attacking == false) {
+	attacking = true
+	moveSpeed = 0
+	attackCooldown = 50
+}
+
 moveX = add2Pos_x*moveSpeed*speedScale
 moveY = add2Pos_y*moveSpeed*speedScale
 
@@ -111,3 +127,21 @@ if (moveDirection == "idle" && image_index >= image_number - 2) {
 if (torch_equipped == true) {
 	sprite_index = sPlayerFlame
 }
+
+//Lägg in sprites till sPlayerAttack_up, sPlayerAttack_down osv, eventuellt också diagonalt
+/*
+if (attacking == true) {
+	if moveDirection == "up" {
+		sprite_index = sPlayerAttack_up
+	}
+	else if moveDirection == "down" {
+		sprite_index = sPlayerAttack_down
+	}
+	else if moveDirection == "up" {
+		sprite_index = sPlayerAttack_left
+	}
+	else if moveDirection == "up" {
+		sprite_index = sPlayerAttack_right
+	}
+}
+*/

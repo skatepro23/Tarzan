@@ -30,14 +30,30 @@ if (!place_meeting(x, y + moveDirection_y*walkSpeed, oWallParent)) {
 		y += moveDirection_y*walkSpeed
 	}
 
-show_debug_message("New tick")
-distanceToPlayer = sqrt(sqr(oPlayer.x-x)+sqr(oPlayer.y-y))
+distanceToPlayer_x = oPlayer.x-x
+distanceToPlayer_y = oPlayer.y-y
+distanceToPlayer = sqrt(sqr(distanceToPlayer_x)+sqr(distanceToPlayer_y))
 
 if (oPlayer.crouching == true) {
 	attentionDistance = 15
 }
 else {
 	attentionDistance = 50
+}
+
+if (keyboard_check(vk_space) && distanceToPlayer < 100) {
+	if (oPlayer.moveDirection == "left" && distanceToPlayer_x >= 0) {
+		instance_destroy(this_instance)
+	}
+	else if (oPlayer.moveDirection == "right" && distanceToPlayer_x < 0) {
+		instance_destroy(this_instance)
+	}
+	else if (oPlayer.moveDirection == "up" && distanceToPlayer_x >= 0) {
+		instance_destroy(this_instance)
+	}
+	else if (oPlayer.moveDirection == "down" && distanceToPlayer_x < 0) {
+		instance_destroy(this_instance)
+	}
 }
 
 if (distanceToPlayer < attentionDistance && birdState == "idle") {
