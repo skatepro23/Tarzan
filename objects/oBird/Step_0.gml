@@ -1,6 +1,8 @@
+with(this_instance) {
+
 depth = -y;
 
-distanceToPlayer = sqrt(sqr(oPlayer.x-oBird.x)+sqr(oPlayer.y-oBird.y))
+distanceToPlayer = sqrt(sqr(oPlayer.x-x)+sqr(oPlayer.y-y))
 
 //show_debug_message("Distance to player: " + string(distanceToPlayer) + " pixels")
 
@@ -26,5 +28,9 @@ if (targetDetected == true) {
 }
 
 if (birdState = "awake") && (abs(x - oPlayer.x) > oCamera.view_size_x || abs(y-oPlayer.y) > oCamera.view_size_y) {
-	instance_destroy(oBird)
+	instance_destroy(this_instance)
+	show_debug_message(string(this_instance)+" got destroyed")
+}
+
+//show_debug_message(string(this_instance)+" is "+birdState)
 }
