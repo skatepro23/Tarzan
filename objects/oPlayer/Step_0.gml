@@ -19,9 +19,11 @@ if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
 if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
 	add2Pos_x = -1
 	moveDirection = "left";
+	lastDirection = moveDirection
 } else if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
 	add2Pos_x = 1
 	moveDirection = "right";
+	lastDirection = moveDirection
 }
 
 if (add2Pos_x == 0 && add2Pos_y == 0) {
@@ -70,7 +72,12 @@ if (moveDirection == "up") {
 if (moveDirection == "down") {
 	image_speed = 1
 	if (crouching == false) {
-		sprite_index = sPlayerRight
+		if lastDirection == "left" {
+			sprite_index = sPlayerLeft
+		}
+		else {
+			sprite_index = sPlayerRight
+		}
 	}
 	else {
 		sprite_index = sPlayerCrouch
