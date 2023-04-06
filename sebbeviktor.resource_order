@@ -44,6 +44,7 @@
     {"name":"oBush1","order":9,"path":"objects/oBush1/oBush1.yy",},
     {"name":"oCamera","order":16,"path":"objects/oCamera/oCamera.yy",},
     {"name":"sGrassBigOpen","order":30,"path":"sprites/sGrassBigOpen/sGrassBigOpen.yy",},
+    {"name":"oNetCollider","order":28,"path":"objects/oNetCollider/oNetCollider.yy",},
     {"name":"sRailBendDownLeft","order":28,"path":"sprites/sRailBendDownLeft/sRailBendDownLeft.yy",},
     {"name":"oWall","order":4,"path":"objects/oWall/oWall.yy",},
     {"name":"oDraw_Info","order":11,"path":"objects/oDraw_Info/oDraw_Info.yy",},
@@ -75,5 +76,6 @@
     {"name":"sRailUp","order":24,"path":"sprites/sRailUp/sRailUp.yy",},
     {"name":"sBlockage","order":33,"path":"sprites/sBlockage/sBlockage.yy",},
     {"name":"Sprite11","order":16,"path":"sprites/Sprite11/Sprite11.yy",},
+    {"name":"sNetPoint","order":34,"path":"sprites/sNetPoint/sNetPoint.yy",},
   ],
 }

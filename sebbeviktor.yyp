@@ -65,6 +65,7 @@
     {"id":{"name":"oBush1","path":"objects/oBush1/oBush1.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"sGrassBigOpen","path":"sprites/sGrassBigOpen/sGrassBigOpen.yy",},},
+    {"id":{"name":"oNetCollider","path":"objects/oNetCollider/oNetCollider.yy",},},
     {"id":{"name":"sRailBendDownLeft","path":"sprites/sRailBendDownLeft/sRailBendDownLeft.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
     {"id":{"name":"oDraw_Info","path":"objects/oDraw_Info/oDraw_Info.yy",},},
@@ -97,6 +98,7 @@
     {"id":{"name":"sBlockage","path":"sprites/sBlockage/sBlockage.yy",},},
     {"id":{"name":"sForegroundRight","path":"sprites/sForegroundRight/sForegroundRight.yy",},},
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
+    {"id":{"name":"sNetPoint","path":"sprites/sNetPoint/sNetPoint.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

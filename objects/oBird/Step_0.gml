@@ -27,19 +27,8 @@ else {
 }
 
 //catch system
-if (keyboard_check(vk_space) && distanceToPlayer < 100) {
-	if (oPlayer.moveDirection == "left" && distanceToPlayer_x >= 0) {
-		instance_destroy(this_instance)
-	}
-	else if (oPlayer.moveDirection == "right" && distanceToPlayer_x < 0) {
-		instance_destroy(this_instance)
-	}
-	else if (oPlayer.moveDirection == "up" && distanceToPlayer_x >= 0) {
-		instance_destroy(this_instance)
-	}
-	else if (oPlayer.moveDirection == "down" && distanceToPlayer_x < 0) {
-		instance_destroy(this_instance)
-	}
+if (place_meeting(x,y,oNetCollider)) {
+	instance_destroy(this_instance)
 }
 
 //If oPlayer is too close to oBird, bird will fly away

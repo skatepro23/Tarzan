@@ -11,19 +11,23 @@ add2Pos_y = 0
 if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
 	add2Pos_y = -1
 	moveDirection = "up"
+	lastDirection = moveDirection
 } else if (keyboard_check(ord("S")) || keyboard_check(vk_down)) {
 	add2Pos_y = 1
 	moveDirection = "down";
+	lastDirection = moveDirection
 }
 
 if (keyboard_check(ord("A")) || keyboard_check(vk_left)) {
 	add2Pos_x = -1
 	moveDirection = "left";
 	lastDirection = moveDirection
+	lastDirection_x = "left"
 } else if (keyboard_check(ord("D")) || keyboard_check(vk_right)) {
 	add2Pos_x = 1
 	moveDirection = "right";
 	lastDirection = moveDirection
+	lastDirection_x = "right"
 }
 
 if (add2Pos_x == 0 && add2Pos_y == 0) {
@@ -42,11 +46,13 @@ if (keyboard_check(vk_shift)){
 }
 
 if (attacking == true) {
+	moveSpeed = 0
 	attackCooldown -= 1
 	show_debug_message("Attacking")
 	
 	if (attackCooldown <= 0) {
 		attacking = false
+		instance_destroy(oNetCollider)
 		show_debug_message("Stopped attacking")
 	}
 }
@@ -55,6 +61,21 @@ if (keyboard_check(vk_space) && attacking == false) {
 	attacking = true
 	moveSpeed = 0
 	attackCooldown = 50
+	
+	if (keyboard_check(vk_space)) {
+		if (lastDirection == "left") {
+			instance_create_layer(x-attackReach,y,"Instances",oNetCollider)
+		}
+		else if (lastDirection == "right") {
+			instance_create_layer(x+attackReach,y,"Instances",oNetCollider)
+		}
+		else if (lastDirection == "up") {
+			instance_create_layer(x,y-attackReach,"Instances",oNetCollider)
+		}
+		else if (lastDirection == "down") {
+			instance_create_layer(x,y+attackReach,"Instances",oNetCollider)
+		}
+	}
 }
 
 moveX = add2Pos_x*moveSpeed*speedScale
@@ -88,7 +109,7 @@ if (moveDirection == "up") {
 if (moveDirection == "down") {
 	image_speed = 1
 	if (crouching == false) {
-		if lastDirection == "left" {
+		if lastDirection_x == "left" {
 			sprite_index = sPlayerLeft
 		}
 		else {
@@ -145,3 +166,5 @@ if (attacking == true) {
 	}
 }
 */
+
+show_debug_message(moveDirection)
