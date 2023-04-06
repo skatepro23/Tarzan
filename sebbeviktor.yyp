@@ -54,6 +54,7 @@
     {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},},
     {"id":{"name":"sBushLush","path":"sprites/sBushLush/sBushLush.yy",},},
     {"id":{"name":"sGrassBig","path":"sprites/sGrassBig/sGrassBig.yy",},},
+    {"id":{"name":"fEntityMovement","path":"scripts/fEntityMovement/fEntityMovement.yy",},},
     {"id":{"name":"oRailVert","path":"objects/oRailVert/oRailVert.yy",},},
     {"id":{"name":"sBush2","path":"sprites/sBush2/sBush2.yy",},},
     {"id":{"name":"oForegroundLeft","path":"objects/oForegroundLeft/oForegroundLeft.yy",},},

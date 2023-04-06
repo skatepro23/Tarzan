@@ -2,34 +2,19 @@ with(this_instance) {
 
 depth = -y;
 
-pauseCooldown -= 1
-walkCooldown -= 1
+//Executes idle movements depending on given paramaters in create event
+if (state == "idle") {
+	struct_birdMovementData = fEntityMovement(struct_birdMovementData)
+	pauseCooldown = struct_birdMovementData.pauseCooldown
+	walkCooldown = struct_birdMovementData.walkCooldown
+	birdWalking = struct_birdMovementData.birdWalking
+	state = struct_birdMovementData.state
 
-//om fågelns gångräknare är på 0 skapas en 
-if (birdState == "idle" && walkCooldown <= 0 && birdWalking == true) {
-	pauseCooldown = random_range(walkTimeBottomLimit,walkTimeUpperLimit)
-	birdWalking = false
+	x += struct_birdMovementData.moveX
+	y += struct_birdMovementData.moveY
 }
 
-if (birdState == "idle" && pauseCooldown <= 0 && birdWalking = false) {
-	walkCooldown = random_range(walkTimeBottomLimit,walkTimeUpperLimit)
-	
-	t = random_range(0,2*pi)
-	moveDirection_x = cos(t)
-	moveDirection_y = sin(t)
-	
-	birdWalking = true
-}
-
-if (birdWalking == true) {
-	if (!place_meeting(x + moveDirection_x*walkSpeed, y, oWallParent)) {
-		x += moveDirection_x*walkSpeed
-	}
-if (!place_meeting(x, y + moveDirection_y*walkSpeed, oWallParent)) {
-	}
-		y += moveDirection_y*walkSpeed
-	}
-
+//calculates distance to oPlayer and sets the birds attention accordingly
 distanceToPlayer_x = oPlayer.x-x
 distanceToPlayer_y = oPlayer.y-y
 distanceToPlayer = sqrt(sqr(distanceToPlayer_x)+sqr(distanceToPlayer_y))
@@ -41,6 +26,7 @@ else {
 	attentionDistance = 50
 }
 
+//catch system
 if (keyboard_check(vk_space) && distanceToPlayer < 100) {
 	if (oPlayer.moveDirection == "left" && distanceToPlayer_x >= 0) {
 		instance_destroy(this_instance)
@@ -56,12 +42,13 @@ if (keyboard_check(vk_space) && distanceToPlayer < 100) {
 	}
 }
 
-if (distanceToPlayer < attentionDistance && birdState == "idle") {
+//If oPlayer is too close to oBird, bird will fly away
+if (distanceToPlayer < attentionDistance && state == "idle") {
 	targetDetected = true
 	t = random_range(0,2*pi)
 	moveDirection_x = cos(t)
 	moveDirection_y = sin(t)
-	birdState = "awake"
+	state = "awake"
 	birdWalking = false
 	show_debug_message("Bird detected player")
 }
@@ -71,7 +58,8 @@ if (targetDetected == true) {
 	y += moveDirection_y*flySpeed
 }
 
-if (birdState = "awake") && (abs(x - oPlayer.x) > oCamera.view_size_x || abs(y-oPlayer.y) > oCamera.view_size_y) {
+//if a fleeing bird gets too far from oPlayer it will despawn
+if (state = "awake") && (abs(x - oPlayer.x) > oCamera.view_size_x || abs(y-oPlayer.y) > oCamera.view_size_y) {
 	instance_destroy(this_instance)
 	show_debug_message("Bird with instance number " + string(this_instance) + " got destroyed")
 }

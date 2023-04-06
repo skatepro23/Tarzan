@@ -13,14 +13,24 @@ with(this_instance) {
 	//flying variables
 	flySpeed = 1.5
 	targetDetected = false
-	birdState = "idle"
+	state = "idle"
 	
-	//walking variables
-	walkSpeed = 0.2
-	pauseCooldown = 5
-	walkCooldown = 0
-	birdWalking = false
-	walkTimeBottomLimit = 10
-	walkTimeUpperLimit = 100
+	//Initiates idle movement paramaters
+	struct_birdMovementData =
+	{
+		//constants
+		walkSpeed : 0.2,
+		walkTimeBottomLimit : 10,
+		walkTimeUpperLimit : 100,
+		//variables
+		pauseCooldown : 5,
+		walkCooldown : 0,
+		birdWalking : false,
+		state : "idle",
+		currentPos_x : x,
+		currentPos_y : y,
+		moveX : 0,
+		moveY : 0
+	}
 	
 }
