@@ -19,6 +19,20 @@ distanceToPlayer_x = oPlayer.x-x
 distanceToPlayer_y = oPlayer.y-y
 distanceToPlayer = sqrt(sqr(distanceToPlayer_x)+sqr(distanceToPlayer_y))
 
+//oBird gets scared if player attacks to close
+if (instance_exists(oNetCollider)) {
+	distanceToNetCollider_x = oNetCollider.x-x
+	distanceToNetCollider_y = oNetCollider.y-y
+	distanceToNetCollider = sqrt(sqr(distanceToNetCollider_x)+sqr(distanceToNetCollider_y))
+	//catch system
+	if (place_meeting(x,y,oNetCollider)) {
+		instance_destroy(this_instance)
+	}
+}
+else {
+	distanceToNetCollider = infinity
+}
+
 if (oPlayer.crouching == true) {
 	attentionDistance = 15
 }
@@ -26,13 +40,8 @@ else {
 	attentionDistance = 50
 }
 
-//catch system
-if (place_meeting(x,y,oNetCollider)) {
-	instance_destroy(this_instance)
-}
-
 //If oPlayer is too close to oBird, bird will fly away
-if (distanceToPlayer < attentionDistance && state == "idle") {
+if (((distanceToNetCollider <= 50 )||(distanceToPlayer < attentionDistance)) && state == "idle") {
 	targetDetected = true
 	t = random_range(0,2*pi)
 	moveDirection_x = cos(t)
