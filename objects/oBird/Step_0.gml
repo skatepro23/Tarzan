@@ -2,16 +2,17 @@ with(this_instance) {
 
 depth = -y;
 
-//Executes idle movements depending on given paramaters in create event
+/*Every tick the bird will execute oEntitiesParent:s step
+event which will give the bird walking instructions depentent
+on the walkSpeed and walkTimeLimits given in the create event
+You can use this code on any object that is a child to oEntitiesParent
+and it will have a walking behavior dependent on the given variables in
+its create event
+*/
 if (state == "idle") {
-	struct_birdMovementData = fEntityMovement(struct_birdMovementData)
-	pauseCooldown = struct_birdMovementData.pauseCooldown
-	walkCooldown = struct_birdMovementData.walkCooldown
-	birdWalking = struct_birdMovementData.birdWalking
-	state = struct_birdMovementData.state
-
-	x += struct_birdMovementData.moveX
-	y += struct_birdMovementData.moveY
+	event_inherited()
+	x += moveX
+	y += moveY
 }
 
 //calculates distance to oPlayer and sets the birds attention accordingly

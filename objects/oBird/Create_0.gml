@@ -15,22 +15,19 @@ with(this_instance) {
 	targetDetected = false
 	state = "idle"
 	
-	//Initiates idle movement paramaters
-	struct_birdMovementData =
-	{
-		//constants
-		walkSpeed : 0.2,
-		walkTimeBottomLimit : 10,
-		walkTimeUpperLimit : 100,
-		//variables
-		pauseCooldown : 5,
-		walkCooldown : 0,
-		birdWalking : false,
-		state : "idle",
-		currentPos_x : x,
-		currentPos_y : y,
-		moveX : 0,
-		moveY : 0
-	}
+	//constants and temporary values needed to use oEntitiesParent:s walking script
+	//constants
+	walkSpeed = 0.2
+	walkTimeBottomLimit = 10
+	walkTimeUpperLimit = 100
+	//temporary values, necessary for initiating script
+	pauseCooldown = 5
+	walkCooldown = 0
+	walkingRN = false
+	state = "idle"
+	currentPos_x = x
+	currentPos_y = y
+	moveX = 0
+	moveY = 0
 	
 }
