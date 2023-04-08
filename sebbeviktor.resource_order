@@ -27,6 +27,7 @@
     {"name":"oCart","order":24,"path":"objects/oCart/oCart.yy",},
     {"name":"Object30","order":16,"path":"objects/Object30/Object30.yy",},
     {"name":"sRailBendUpLeft","order":27,"path":"sprites/sRailBendUpLeft/sRailBendUpLeft.yy",},
+    {"name":"sSloth","order":35,"path":"sprites/sSloth/sSloth.yy",},
     {"name":"oBushLush","order":5,"path":"objects/oBushLush/oBushLush.yy",},
     {"name":"oPlayer","order":6,"path":"objects/oPlayer/oPlayer.yy",},
     {"name":"oSloth","order":30,"path":"objects/oSloth/oSloth.yy",},
