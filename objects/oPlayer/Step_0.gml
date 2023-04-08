@@ -170,5 +170,3 @@ if (attacking == true) {
 	}
 }
 */
-
-show_debug_message(moveDirection)

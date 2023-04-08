@@ -3,6 +3,7 @@
 //show_debug_message("oBird id: "+string(id))
 
 this_instance = id
+entityMax = 12
 
 with(this_instance) {
 	//destroy if spawned on top of wall

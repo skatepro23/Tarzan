@@ -1,0 +1,1 @@
+entityMax = 5
