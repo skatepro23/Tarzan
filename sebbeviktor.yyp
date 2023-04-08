@@ -43,6 +43,7 @@
     {"id":{"name":"oWallParent","path":"objects/oWallParent/oWallParent.yy",},},
     {"id":{"name":"oBlockage","path":"objects/oBlockage/oBlockage.yy",},},
     {"id":{"name":"oCart","path":"objects/oCart/oCart.yy",},},
+    {"id":{"name":"Object30","path":"objects/Object30/Object30.yy",},},
     {"id":{"name":"sRailBendUpLeft","path":"sprites/sRailBendUpLeft/sRailBendUpLeft.yy",},},
     {"id":{"name":"oBushLush","path":"objects/oBushLush/oBushLush.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},

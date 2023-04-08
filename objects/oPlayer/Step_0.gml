@@ -8,9 +8,6 @@ add2Pos_x = 0
 add2Pos_y = 0
 
 
-if (keyboard_check(ord("W"))) {
-  y -= 1
-}
 // Check for WASD key presses and update the moveX and moveY variables accordingly
 if (keyboard_check(ord("W")) || keyboard_check(vk_up)) {
 	add2Pos_y = -1
