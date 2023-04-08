@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sSloth",
-    "path": "sprites/sSloth/sSloth.yy",
+    "name": "sRailBendDownLeft",
+    "path": "sprites/sRailBendDownLeft/sRailBendDownLeft.yy",
   },
   "spriteMaskId": null,
   "tags": [

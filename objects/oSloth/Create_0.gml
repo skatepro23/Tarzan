@@ -1,1 +1,1 @@
-entityMax = 30
+entityMax = 5
