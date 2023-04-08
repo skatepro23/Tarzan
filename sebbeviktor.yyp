@@ -49,6 +49,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSloth","path":"objects/oSloth/oSloth.yy",},},
     {"id":{"name":"oRailBendUpLeft","path":"objects/oRailBendUpLeft/oRailBendUpLeft.yy",},},
+    {"id":{"name":"Sprite36","path":"sprites/Sprite36/Sprite36.yy",},},
     {"id":{"name":"oRailBendDownLeft","path":"objects/oRailBendDownLeft/oRailBendDownLeft.yy",},},
     {"id":{"name":"pRail","path":"paths/pRail/pRail.yy",},},
     {"id":{"name":"sBush","path":"sprites/sBush/sBush.yy",},},

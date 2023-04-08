@@ -31,6 +31,7 @@
     {"name":"oPlayer","order":6,"path":"objects/oPlayer/oPlayer.yy",},
     {"name":"oSloth","order":30,"path":"objects/oSloth/oSloth.yy",},
     {"name":"oRailBendUpLeft","order":21,"path":"objects/oRailBendUpLeft/oRailBendUpLeft.yy",},
+    {"name":"Sprite36","order":17,"path":"sprites/Sprite36/Sprite36.yy",},
     {"name":"oRailBendDownLeft","order":19,"path":"objects/oRailBendDownLeft/oRailBendDownLeft.yy",},
     {"name":"sBush","order":13,"path":"sprites/sBush/sBush.yy",},
     {"name":"sCart","order":31,"path":"sprites/sCart/sCart.yy",},
