@@ -11,7 +11,7 @@ if (asset_has_tags(objName,"tEntity")) {
 		entityMax = entityMax
 	}
 	
-	show_debug_message("Entity MAX is: " + string(entityMax))
+	//show_debug_message("Entity MAX is: " + string(entityMax))
 
 	if (entityCount < entityMax) {
 		spawnRange = 100
@@ -31,7 +31,7 @@ if (asset_has_tags(objName,"tEntity")) {
 		//if (spawnPoint_x < frameBorder_left && spawnPoint_x > frameBorder_right && spawnPoint_y < frameBorder_top && spawnPoint_y > frameBorder_bottom) {
 			instance_create_layer(spawnPoint_x,spawnPoint_y,"Overlay",objName)
 		//}
-		show_debug_message("Created new instance: " + string(objName))
+		//show_debug_message("Created new instance: " + string(objName))
 			
 		}
 	}
