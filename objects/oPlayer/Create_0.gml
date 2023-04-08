@@ -8,4 +8,4 @@ moveDirection = "down";
 lastDirection = moveDirection
 lastDirection_x = "left"
 lastDirection_y = "down"
-attackReach = 50
+attackReach = 30

@@ -77,7 +77,7 @@ if (keyboard_check(vk_space) && attacking == false) {
 			instance_create_layer(x,y-attackReach,"Instances",oNetCollider)
 		}
 		else if (lastDirection == "down") {
-			instance_create_layer(x,y+attackReach-30,"Instances",oNetCollider)
+			instance_create_layer(x,y+attackReach-15,"Instances",oNetCollider)
 		}
 	}
 }
