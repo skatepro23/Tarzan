@@ -16,21 +16,18 @@ with(this_instance) {
 	state = "idle"
 	
 	//Initiates idle movement paramaters
-	struct_birdMovementData =
-	{
-		//constants
-		walkSpeed : 0.2,
-		walkTimeBottomLimit : 10,
-		walkTimeUpperLimit : 100,
-		//variables
-		pauseCooldown : 5,
-		walkCooldown : 0,
-		birdWalking : false,
-		state : "idle",
-		currentPos_x : x,
-		currentPos_y : y,
-		moveX : 0,
-		moveY : 0
-	}
+	//constants
+	walkSpeed = 0.2
+	walkTimeBottomLimit = 10
+	walkTimeUpperLimit = 100
+	//variables
+	pauseCooldown = 5
+	walkCooldown = 0
+	walkingRightNow = false
+	state = "idle"
+	currentPos_x = x
+	currentPos_y = y
+	moveX = 0
+	moveY = 0
 	
 }

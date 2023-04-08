@@ -4,14 +4,9 @@ depth = -y;
 
 //Executes idle movements depending on given paramaters in create event
 if (state == "idle") {
-	struct_birdMovementData = fEntityMovement(struct_birdMovementData)
-	pauseCooldown = struct_birdMovementData.pauseCooldown
-	walkCooldown = struct_birdMovementData.walkCooldown
-	birdWalking = struct_birdMovementData.birdWalking
-	state = struct_birdMovementData.state
-
-	x += struct_birdMovementData.moveX
-	y += struct_birdMovementData.moveY
+	fEntityMovement()
+	x += moveX
+	y += moveY
 }
 
 //calculates distance to oPlayer and sets the birds attention accordingly
@@ -47,7 +42,7 @@ if (((distanceToNetCollider <= 50 )||(distanceToPlayer < attentionDistance)) && 
 	moveDirection_x = cos(t)
 	moveDirection_y = sin(t)
 	state = "awake"
-	birdWalking = false
+	walkingRightNow = false
 	show_debug_message("Bird detected player")
 }
 
