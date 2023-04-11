@@ -71,6 +71,7 @@
     {"name":"sPlayerCrouch","order":5,"path":"sprites/sPlayerCrouch/sPlayerCrouch.yy",},
     {"name":"sPlayerLeft","order":4,"path":"sprites/sPlayerLeft/sPlayerLeft.yy",},
     {"name":"oBushSmall","order":8,"path":"objects/oBushSmall/oBushSmall.yy",},
+    {"name":"gameController","order":31,"path":"objects/gameController/gameController.yy",},
     {"name":"sRailBendUpRight","order":26,"path":"sprites/sRailBendUpRight/sRailBendUpRight.yy",},
     {"name":"sTree","order":17,"path":"sprites/sTree/sTree.yy",},
     {"name":"oRailBendDownRight","order":20,"path":"objects/oRailBendDownRight/oRailBendDownRight.yy",},
