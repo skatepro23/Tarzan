@@ -21,9 +21,16 @@ if (instance_exists(oNetCollider)) {
 	distanceToNetCollider = sqrt(sqr(distanceToNetCollider_x)+sqr(distanceToNetCollider_y))
 	//catch system
 	if (place_meeting(x,y,oNetCollider)) {
-		instance_destroy(this_instance)
+		state = "catched"
+		flySpeed = 0
+		sprite_index = sBirdGotCatched
 	}
 }
+		
+if (state == "catched" && image_index >= image_number - 1) {
+	instance_destroy(this_instance)
+}
+	
 else {
 	distanceToNetCollider = infinity
 }

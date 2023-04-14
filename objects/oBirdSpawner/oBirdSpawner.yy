@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sBirdSpawner",
+    "path": "sprites/sBirdSpawner/sBirdSpawner.yy",
+  },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
