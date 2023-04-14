@@ -23,6 +23,7 @@
     {"name":"sGrass","order":14,"path":"sprites/sGrass/sGrass.yy",},
     {"name":"sRailBendDownRight","order":29,"path":"sprites/sRailBendDownRight/sRailBendDownRight.yy",},
     {"name":"oWallParent","order":15,"path":"objects/oWallParent/oWallParent.yy",},
+    {"name":"sEButton","order":37,"path":"sprites/sEButton/sEButton.yy",},
     {"name":"oBlockage","order":26,"path":"objects/oBlockage/oBlockage.yy",},
     {"name":"oCart","order":24,"path":"objects/oCart/oCart.yy",},
     {"name":"Object30","order":16,"path":"objects/Object30/Object30.yy",},
