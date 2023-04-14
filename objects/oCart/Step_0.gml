@@ -1,3 +1,5 @@
+depth = -y;
+
 // Check if the player is colliding with the cart and pressing the "E" key
 if (place_meeting(x, y, oPlayer) && keyboard_check_pressed(ord("E")) && moving == false) {
     activated = true; // Toggle the cart's activated state
