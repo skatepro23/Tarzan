@@ -1,0 +1,1 @@
+global.catchedBirds = 0

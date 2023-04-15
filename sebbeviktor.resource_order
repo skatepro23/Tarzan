@@ -19,6 +19,7 @@
     {"name":"oWallBig","order":14,"path":"objects/oWallBig/oWallBig.yy",},
     {"name":"oRailHoriz","order":18,"path":"objects/oRailHoriz/oRailHoriz.yy",},
     {"name":"oForegroundRight","order":7,"path":"objects/oForegroundRight/oForegroundRight.yy",},
+    {"name":"oGameController","order":31,"path":"objects/oGameController/oGameController.yy",},
     {"name":"sPlayerBack","order":15,"path":"sprites/sPlayerBack/sPlayerBack.yy",},
     {"name":"sGrass","order":14,"path":"sprites/sGrass/sGrass.yy",},
     {"name":"sRailBendDownRight","order":29,"path":"sprites/sRailBendDownRight/sRailBendDownRight.yy",},

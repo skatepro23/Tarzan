@@ -37,6 +37,7 @@
     {"id":{"name":"oWallBig","path":"objects/oWallBig/oWallBig.yy",},},
     {"id":{"name":"oRailHoriz","path":"objects/oRailHoriz/oRailHoriz.yy",},},
     {"id":{"name":"oForegroundRight","path":"objects/oForegroundRight/oForegroundRight.yy",},},
+    {"id":{"name":"oGameController","path":"objects/oGameController/oGameController.yy",},},
     {"id":{"name":"sPlayerBack","path":"sprites/sPlayerBack/sPlayerBack.yy",},},
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},},
     {"id":{"name":"sRailBendDownRight","path":"sprites/sRailBendDownRight/sRailBendDownRight.yy",},},

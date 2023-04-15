@@ -29,6 +29,7 @@ if (instance_exists(oNetCollider)) {
 		
 if (state == "catched" && image_index >= image_number - 1) {
 	instance_destroy(this_instance)
+	global.catchedBirds += 1
 }
 	
 else {
